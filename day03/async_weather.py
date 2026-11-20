@@ -45,3 +45,24 @@ async def main():
     print(f"All at once: {time.time() - start:.2f}s")
 
 asyncio.run(main())
+# import asyncio
+# import time
+# async def fetch_data(param):
+#     print(f"do something with {param}")
+#     await asyncio.sleep(param)
+#     print(f"done wirh {param}")
+#     return f"results of{param}"
+# async def main():
+#     task1=asyncio.create_task(fetch_data(1))
+#     task2=asyncio.create_task(fetch_data(2))
+#     result1=await task2
+#     print("task 2 is completed")
+#     result2=await task1
+#     print("task1 is completed")
+#     return [task1,task2]
+
+# t1=time.perf_counter()
+# results=asyncio.run(main())
+# print(results)
+# t2=time.perf_counter()
+# print(f"finished in{t2-t1:.2f}seconds")
